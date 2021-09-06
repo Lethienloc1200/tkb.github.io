@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     /* position: fixed; */
     margin: 0;
@@ -59,9 +63,9 @@ body{
 
 .row.fixed {
     position: fixed;
-    top: 161px;
-    left: 100px;
-    right:100px;
+    top: 100px;
+    left: 120px;
+    right:120px;
 }
 .col-sm-2{
     position: relative;
@@ -81,12 +85,15 @@ body{
     flex-direction: column;
     align-items: center;
       display: flex;
-      height:60px;
+      min-height:80px;
+      max-height: 220px;
       align-items: center;
       display: flex;
       justify-content: center;
+      box-sizing: border-box;
     
   }
+
   .box_nhac i {
       font-size: 35px;
       z-index: 10px;
@@ -132,3 +139,76 @@ audio.nhac {
         box-shadow: 0 0 0 0 rgba(255, 0, 64, 0), 0 0 0 30px rgba(255, 0, 64, 0);
     }
 }
+.red-color{
+    color: red;
+    border: 1px solid red !important;
+}
+.yellow-color{
+    color: rgb(211, 191, 12);
+    border: 1px solid rgb(211, 191, 12) !important;
+}
+.blue-color{
+    color: rgb(17, 0, 255);
+    border: 1px solid  rgb(17, 0, 255) !important;
+}
+.orange-color{
+    color: rgb(255, 153, 0);
+    border: 1px solid  rgb(255, 153, 0) !important;
+}
+.violet-color{
+    color: rgb(68, 6, 47);
+    border: 1px solid  rgb(68, 6, 47) !important;
+}
+.violet-color1{
+    color: rgb(68, 6, 47);
+
+}
+.pink-color{
+    color: rgb(255, 0, 179);
+    border: 1px solid  rgb(255, 0, 179) !important;
+}
+.pink-color1{
+    color: rgb(255, 0, 179);
+   
+}
+
+.diff-color{
+    color: rgb(16, 163, 16);
+    border: 1px solid  rgb(16, 163, 16) !important;
+}
+.btn {
+    background: #808d8469 !important;
+    font-weight: 700;
+    box-shadow: -4px 4px 5px 2px #5c5959;
+}
+.btn:hover{
+    background-color: rgba(241, 7, 7, 0.315) !important;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    * {
+        padding: 0;
+        margin: 0;
+      } 
+      .row.fixed {
+        position: fixed;
+        top: 100px;
+        left: 5px !important;
+        right:5px !important;
+    }
+    .center-me {
+  
+        font-size: 25px;
+         text-align: center;
+         color: rgb(255, 5, 243) !important;
+         margin:auto;
+         align-items: center ;
+      
+        margin-bottom: 20px;
+        }
+  }
