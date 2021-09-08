@@ -8,6 +8,7 @@ body{
     padding: 0;
     background-image: url(background.jpg);
     background-size: cover;
+    object-fit: cover;
 
 }
 .rain{
@@ -200,6 +201,7 @@ audio.nhac {
         top: 100px;
         left: 5px !important;
         right:5px !important;
+        background-color: red;
     }
     .center-me {
   
